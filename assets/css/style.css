@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    background: #000000 !important;
+    font-family: 'Poppins', sans-serif;
+      width: 100%;
+      height: 100%;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+header {
+  width: 900px;
+}
+
+header.header_area {
+  position: fixed;
+  width: 70%;
+  top: 7%;
+  left: 14%;
+  z-index: 9999;
+  background-color: transparent;
+  padding: 15px 0;
+}
+
+header.header_area .logo a {
+  text-decoration: none;
+}
+
+header.header_area .logo a h2 {
+  line-height: 1.4;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #ffffff;
+   font-weight: 700;
+}
+
+header.header_area .navbar_left {
+  text-align: right;
+}
+
+header.header_area .navbar_left ul {
+  position: relative;
+  top: 10px;
+}
+
+header.header_area .navbar_left ul li:last-child {
+  margin-right: 0;
+}
+
+header.header_area .navbar_left ul li::after {
+  width: 100%;
+  height: 2px;
+  background: red;
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  
+   visibility: hidden;
+}
+
+header.header_area .navbar_left ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: .5px;
+}
+
+header.header_area .navbar_left ul li {
+  position: relative;
+  margin: 0 20px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  z-index: 100;
+  transition: .2s;
+   -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+
+header.header_area .navbar_left ul li a i {
+  font-size: 18px;
+}
+
+header.header_area .navbar_left ul li:hover::after {
+  visibility: visible;
+}
+
+.content_area {
+  position: absolute;
+  width: 70%;
+  top: 0%;
+  left: 11%;
+}
+
+.content_area .content .titel h1 {
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 24px;
+  text-transform: capitalize;
+  font-size: 5.5rem;
+  line-height: 1;
+}
+
+.content_area .content .content_txt {
+  margin-bottom: 40px;
+}
+
+.content_area .content .content_txt p {
+  font-size: 20px;
+  line-height: 1.1;
+  width: 74%;
+  margin: 0 auto;
+   color: #ffffff;
+}
+
+.content_area .content .content_img img {
+  width: 28rem;
+  height: 30rem;
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .content_area {
+    top: 20%;
+    left: 0%;
+    width: 100%;
+  }
+  .content_area .content .titel h1 {
+    font-size: 3rem;
+    margin-bottom: 56px;
+  }
+  .content_area .content .content_txt p {
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .mean-container .mean-bar {
+    background: transparent;
+    z-index: 9999;
+  }
+  header.header_area {
+    left: 35%;
+    top: 0;
+  }
+
+  .content_area .content .content_img img {
+    width: 15rem;
+    height: 22rem;
+  }
+
+  .mean-container a.meanmenu-reveal {
+    top: 9px;
+  }
+  .mean-container .mean-nav {
+    background: #131415;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .mean-container .mean-bar {
+    background: transparent;
+    z-index: 9999;
+  }
+  header.header_area {
+    width: 100%;
+    left: 34%;
+    z-index: 9999;
+    top: 0%;
+  }
+  .content_area .content .titel h1 {
+    font-size: 4rem;
+    margin-bottom: 56px;
+  }
+  .mean-container .mean-nav {
+    background: #131415;
+  }
+  .content_area {
+    left: 9%;
+
+     top: 16%;
+  }
+  .mean-container a.meanmenu-reveal {
+    top: 9px;
+  }
+  .content_area .content .content_txt p {
+    font-size: 15px;
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .mean-container .mean-bar {
+    background: transparent;
+    z-index: 9999;
+  }
+  header.header_area {
+    width: 90%;
+    left: 42%;
+    z-index: 9999;
+    top: 0;
+  }
+  .content_area .content .titel h1 {
+    margin-bottom: 40px;
+  }
+   .mean-container .mean-nav {
+    background: #131415;
+  }
+  .content_area .content .content_img img {
+    width: 40rem;
+  }
+  .content_area {
+    left: 7%;
+    width: 90%;
+    top: 16%;
+  }
+  .mean-container a.meanmenu-reveal {
+    top: 9px;
+  }
+  .content_area .content .content_txt p {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  header.header_area {
+    width: 100%;
+    top: 0%;
+    left: 0%;
+  }
+
+  .content_area .content .content_txt p {
+    font-size: 20px;
+    width: 100%;
+  }
+  .content_area .content .titel h1 {
+    margin-bottom: 56px;
+  }
+
+  .content_area {
+      left: 14%;
+     top: 16%;
+  }
+}
