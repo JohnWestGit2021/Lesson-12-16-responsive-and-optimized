@@ -127,8 +127,8 @@ header.header_area .navbar_left ul li:hover::after {
 }
 
 .content_area .content .content_img img {
-  width: 28rem;
-  height: 30rem;
+  /* width: 28rem;
+  height: 30rem; */
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
@@ -156,8 +156,9 @@ header.header_area .navbar_left ul li:hover::after {
   }
 
   .content_area .content .content_img img {
-    width: 15rem;
-    height: 22rem;
+    /* width: 15rem;
+    height: 22rem; */
+    width: 100%;
   }
 
   .mean-container a.meanmenu-reveal {
